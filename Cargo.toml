@@ -1,0 +1,19 @@
+[package]
+name = "axum-websocket-mytutorial"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# error
+anyhow = "1.0.98"
+# server
+axum = { version = "0.8.4", features = ["ws"] }
+tokio = { version = "1.45.0", features = ["full"] }
+# json
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+# cors
+tower-http = { version = "0.6.4", features = ["cors"] }
+# logging
+tracing = "0.1.41"
+tracing-subscriber = "0.3.19"
