@@ -27,6 +27,10 @@
           with pkgs;
           mkShell {
             buildInputs = [
+              # JavaScript
+              nodejs
+              corepack
+              # Rust
               openssl
               pkg-config
               (rust-bin.stable.latest.default.override { extensions = [ "rust-src" ]; })
